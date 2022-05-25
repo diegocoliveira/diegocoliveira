@@ -1,0 +1,191 @@
+/*
+paleta de cores baseado no meu cachorro (ZORO)
+#2C3339
+#3E433D
+#E4E9E3
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E4E9E3;
+    /*fonte e cor predominantes dos textos*/
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+    font-size: 1.8vmin;
+    color: #2C3339;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6vh;
+}
+
+header{
+    background-color: #2C3339;
+    color: #E4E9E3;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    
+}
+
+header h1{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3vmin;
+   
+}
+
+header h2{
+    margin-bottom: 11vmin;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.1vmin;
+   
+}
+
+#photo{
+    width: 18vmin;
+    height: 18vmin;
+    position: absolute;
+    bottom: -10vmin;
+    background-image: url("../images/diego.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 0.4vmin solid;
+    border-color: white;
+    box-shadow: 0.5vmin 0.5vmin 1vmin 0 #3E433D;
+}
+
+#about{
+    margin-top: 22vh;
+    padding: 2vh 3vw;
+    width: 70vw;
+    min-height: 30vh;
+    background-color: white;
+    text-align: justify;
+    box-shadow: 0.3vmin 0.3vmin 2vmin 0 #3E433D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1vh;
+}
+
+#social-media{
+    margin-top: 11vmin;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+}
+
+#social-media img{
+    width: 3vmin;
+    opacity: 0.6;
+}
+
+#social-media img:hover{
+    opacity: 1;
+}
+
+.section-title{
+    margin-top: 4vh;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vmin;
+}
+
+#timeline{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7vw;
+  
+}
+
+#timeline-left{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+#timeline-right{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+#timeline-line{
+    width: 0.2vw;
+    background: linear-gradient(to top, #E4E9E3 0%, #3E433D 50%, #2C3339 100%);
+}
+
+.card-left, .card-right{
+    width: 28vw;
+    min-height: 30vh;
+    background-color: white;
+    box-shadow: 0.3vmin 0.3vmin 2vmin 0 #3E433D;
+
+}
+.card-title{
+    height: 8vh;
+    background-color: #2C3339;
+    color: #E4E9E3;
+    position: relative;
+    display: flex;
+
+}
+
+.card-left .triangle {
+    width: 0;
+    height: 0;
+    border-top: 0vh solid transparent;
+    border-left: 4vw solid #2C3339;
+    border-bottom: 4vh solid transparent;
+    position: absolute;
+    left: 28vw;
+}
+.card-left .circle {
+    background: #2C3339;
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+    top:-1.5vh;
+    left: 34.1vw; /*28 vw tamanho do card + gap 7vw timeline +0.1 metade line - 1 metade circle*/
+}
+
+
+.card-right .triangle {
+    width: 0;
+    height: 0;
+    border-top: 0vh solid transparent;
+    border-right: 4vw solid #2C3339;
+    border-bottom: 4vh solid transparent;
+    position: absolute;
+    right: 28vw;
+}
+.card-right .circle {
+    background: #2C3339;
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+    top:-1.5vh;
+    right: 34.1vw; /*28 vw tamanho do card + gap 7vw timeline +0.1 metade line - 1 metade circle*/
+}
